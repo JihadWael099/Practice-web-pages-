@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Green:hsl(75, 94%, 57%);
+    --white:hsl(0, 0%, 100%);
+    --Gray700:hsl(0, 0%, 20%);
+    --Gray800:hsl(0, 0%, 12%);
+    --Gray900:hsl(0, 0%, 8%);
+}
+body{
+    font-family:"Inter" ;
+    background-color: var(--Gray900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    
+    background-color: var(--Gray800);
+    width: 350px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 32px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.image img{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 25px;
+}
+.main-content .name{
+    text-align: center;
+    color: var(--white);
+}
+.main-content .add{
+    text-align: center;
+    color: var(--Green);
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.main-content .information{
+    text-align: center;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 32px;
+    margin-bottom: 15px;
+}
+.btn{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: var(--white);
+    background-color: var(--Gray700);
+}
