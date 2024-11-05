@@ -10,6 +10,9 @@
   <li>
     CSS
   </li>
+  <li>
+    Javascript
+  </li>
 </ul>
 
 
