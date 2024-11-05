@@ -4,7 +4,7 @@
 
 # Welcome! 👋
 
-# Live [Click here] (https://jihadwael099.github.io/Practice-web-pages-/interactive-rating-component-main)
+# Live[Click here](https://jihadwael099.github.io/Practice-web-pages-/interactive-rating-component-main)
 
 
 # build using 
