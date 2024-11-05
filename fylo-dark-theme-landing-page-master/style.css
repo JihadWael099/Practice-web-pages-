@@ -11,10 +11,16 @@
     --Light-Red: hsl(0, 100%, 63%);
     --White: hsl(0, 0%, 100%)
 }
+button:hover ,.Get-start{
+    cursor: pointer;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Open Sans';
 }
 header{
     font-family: 'Raleway';
@@ -23,7 +29,7 @@ body
 {
     height: 100vh;
     
-    background-color: var(--Dark-Blue-testimonials-background);
+    background-color: hsl(217, 28%, 15%);
 }
 #navbar{
     display: flex;
@@ -73,7 +79,7 @@ a
     font-weight: 300;
     padding: 30px;
 }
-#main-contant button{
+#main-contant button ,.Get-start{
     background-color: var(--Cyan);
     border: none;
     outline: none;
@@ -85,6 +91,241 @@ a
     font-size: 14px;
     font-weight: 400;
 }
+#our-service{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 100px;
+}
+.servises{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    column-gap: 150px;
+    row-gap: 50px;
+}
+.service{
+    
+    text-align: center;
+}
+.service h4{
+    color: var(--White);
+    font-size: 17px;
+    margin-top: 10px;
+}
+.service p{
+    color: var(--White);
+    font-size: 15px;
+    margin-top: 10px;
+    width: 400px;
+    font-weight: 100;
+}
+#more-about-fylo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 100px;
+   
+}
+
+.more-about-fylo-content h2{
+    color: var(--White);
+    font-size: 32px;
+    width: 300px;
+    margin-bottom: 20px;
+    
+}
+.more-about-fylo-content p{
+    font-size: 17px;
+    width: 400px;
+    margin-bottom: 20px;
+    color: var(--White);
+}
+.more-about-fylo-content a{
+    
+    color: var(--Cyan);
+    font-size: 15px;
+    border-bottom: solid 1px ;
+    padding-bottom: 1px;
+    font-family: 'Open Sans';
+}
+.card{
+    width: 350px;
+    padding: 20px;
+    color: var(--White);
+    box-shadow: 7px 10px hsl(218, 28%, 13%);
+    border-radius: 2px;
+    background-color: var(--Dark-Blue-testimonials-background);
+}
+.card img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+.card p{
+    font-size: 15px;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#cards-section-img{
+    margin-left: 100px;
+}
+#cards-section{
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+.image-card{
+    margin-top: 20px;
+    
+    display: flex;
+}
+.image-card h6{
+    font-size: 10px;
+}
+.image-card p{
+    font-size: 10px;
+}
+#early-access-section{
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+main{
+    position: relative;
+}
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: hsl(219, 30%, 18%);
+    position:absolute; 
+    left: 50%;
+    bottom: -30%;
+    transform: translateX(-50%);
+    padding: 50px 50px 10px 50px;
+    border-radius: 5px;
+    color: var(--White);
+    z-index: 1000; 
+}
+
+  
+  .sign-up h2 {
+    margin-bottom: 30px;
+  }
+  
+  .sign-up p {
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  
+  input[type="email"] {
+    width: 482px;
+    height: 50px;
+    padding: 20px 47px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    margin-right: 20px;
+  }
+  
+  input[type="submit"] {
+    margin: 0;
+  }
+  
+  form {
+    display: flex;
+    align-content: center;
+  }
+  
+  ::placeholder {
+    opacity: 0.4;
+  }
+  
+  /* footer */
+  
+  footer {
+    color: var(--White);
+    background:  hsl(216, 53%, 9%);
+    padding: 200px 80px 80px 100px;
+    display: grid;
+    grid-template-columns: 4fr 3fr 1fr 1fr 2fr;
+    grid-template-rows: auto;
+    column-gap: 70px;
+    grid-template-areas:
+      "logo . . . ."
+      "location  contact links more-links social-icons";
+  }
+  
+  .footer-logo {
+    grid-area: logo;
+    margin-bottom: 35px;
+  }
+  
+  .footer-location {
+    grid-area: location;
+    display: grid;
+    grid-template-columns: 5% 95%;
+  }
+  
+  .footer-location span {
+    padding-left: 35px;
+  }
+  
+  .footer-contact {
+    grid-area: contact;
+  }
+  
+  .footer-contact p {
+    margin-bottom: 26px;
+  }
+  
+  .footer-contact img {
+    margin-right: 24px;
+  }
+  
+  .footer-links {
+    grid-area: links;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-links a {
+    margin-bottom: 24px;
+    
+    color: var(--White);
+  }
+  
+  .footer-more-links {
+    grid-area: more-links;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-more-links a {
+    margin-bottom: 24px;
+    
+    color: var(--White);
+  }
+  
+  .social-icons {
+    grid-area: social-icons;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .social-icons i {
+    font-size: 30px;
+  }
+
 @media (max-width:600px) {
     #list ul{
         margin-right: 0;
@@ -125,4 +366,103 @@ a
         font-size: 14px;
         font-weight: 400;
     }
+    .servises{
+
+        grid-template-columns: 1fr;
+
+    }
+    .service h4{
+        
+        font-size: 15px;
+       
+    }
+    .service p{
+        
+        font-size: 17px;
+       
+        width: 300px;
+    }
+    #image-content{
+        width: 300px;
+    }
+    #more-about-fylo{
+        flex-direction: column;
+    }
+    .more-about-fylo-content{
+        text-align: center;
+    }
+    .more-about-fylo-content h2{
+      
+        font-size: 25px;
+        text-align: center;
+        
+    }
+    .more-about-fylo-content p{
+        font-size: 15px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .cards{
+        
+        gap: 50px;
+        
+        flex-direction: column;
+    }
+    #cards-section-img{
+        margin-left: 50px;
+    }
+    .card{
+        width: 300px;
+        
+    }
+    .sign-up {
+        padding: 40px 25px;
+        bottom: -560px;
+        
+      }
+    
+      form {
+        flex-direction: column;
+        
+      }
+      input[type="email"],
+      input[type="submit"] {
+        width: 280px;
+        margin: 0px 0px 25px 0px;
+      }
+    
+      
+      footer {
+        grid-template-columns: 1fr;
+        padding: 280px 27px 42px 27px;
+        column-gap: 0;
+        row-gap: 10px;
+        grid-template-areas:
+          "logo"
+          "location"
+          "contact"
+          "links"
+          "more-links"
+          "social-icons";
+      }
+     
+      .social-icons i{
+        font-size: 28px;
+      }
+      .footer-logo{
+        margin-top: 100px;
+      }
+    
+    
+      .fa-facebook{
+        justify-self: end;
+      }
+      .fa-twitter{
+        justify-self: center;
+      }
+      .fa-intagram{
+        justify-self: start;
+      }
+
+    
 }
